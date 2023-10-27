@@ -21,9 +21,9 @@ Architecture SHIFT_REG_arch of SHIFT_REG is
             elsif LOAD = '1' then 
                     qbuf <= D;
             elsif DIR = '0' then 
-                qbuf <= qbuf(2 downto 0) & 1;
+                qbuf <= qbuf(3 downto 0);
             elsif DIR = '1' then 
-                qbuf <= R & qbuf(3 downto 0);
+                qbuf <= R & qbuf(2 downto 0);
             end if;
             else qbuf <= qbuf;
         end if;

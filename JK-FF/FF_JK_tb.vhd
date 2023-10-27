@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
-Entity FF_JK_tb
+Entity FF_JK_tb is
 end FF_JK_tb;
 
 Architecture FF_JK_tb_arch of FF_JK_tb is 

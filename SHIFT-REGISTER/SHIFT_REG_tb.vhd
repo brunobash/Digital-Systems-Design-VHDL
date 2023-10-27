@@ -16,7 +16,7 @@ Architecture SHIFT_REG_tb_arch of SHIFT_REG_tb is
     signal D_tb, Q_tb: STD_LOGIC_VECTOR(3 downto 0);
 
     begin
-        DUT: SHIFT-REG
+        DUT: SHIFT_REG
         port map(
             CLK => CLK_tb,
             RST => RST_tb, 
@@ -44,7 +44,7 @@ Architecture SHIFT_REG_tb_arch of SHIFT_REG_tb is
             DIR_tb <= '0';
             L_tb <= '0';
             R_tb <= '0';
-            D_tb <= '0'; 
+            D_tb <= "0000"; 
             wait for 10 ns;
 
             RST_tb <= '1';
