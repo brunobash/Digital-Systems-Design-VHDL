@@ -34,6 +34,7 @@ Architecture SHIFT_REG_tb_arch of SHIFT_REG_tb is
             wait for 5 ns;
 
             CLK_tb <= '1';
+	    wait for 5 ns;
         end process;
 
         stimulus: process
