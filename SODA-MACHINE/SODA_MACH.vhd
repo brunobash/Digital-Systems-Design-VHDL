@@ -9,3 +9,4 @@ Entity SodaMachine is
 		ch25: out STD_LOGIC;
 		ch50: out STD_LOGIC;
 	    );
+end SodaMachine
