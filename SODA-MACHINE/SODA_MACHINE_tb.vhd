@@ -1,4 +1,4 @@
-library IEEE:
+library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_SIGNED.ALL;
 use STD.TEXTIO.ALL;
@@ -24,6 +24,7 @@ Architecture SodaMachine_tb_arch of SodaMachine_tb is
     begin
         soda: SodaMachine port map(
             A => A, 
+            RESET => RESET,
             CLK => CLK,
             R => R
         );
@@ -33,7 +34,7 @@ Architecture SodaMachine_tb_arch of SodaMachine_tb is
             CLK <= '0', '1' after G/2, '0' after G;
             wait for G;
 
-        end process;
+        end process clock;
 
         proc: process
         begin 
@@ -111,6 +112,3 @@ Architecture SodaMachine_tb_arch of SodaMachine_tb is
         wait;
     end process;
 end SodaMachine_tb_arch; 
-
-
-
